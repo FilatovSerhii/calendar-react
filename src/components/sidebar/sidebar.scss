@@ -1,0 +1,15 @@
+.time-slot {
+	height: 59px;
+	width: 48px;
+	text-align: right;
+	position: relative;
+
+	&__time {
+		font-size: 12px;
+		position: absolute;
+		opacity: 0.7;
+		right: 0;
+		bottom: -6px;
+		margin-right: 5px;
+	}
+}

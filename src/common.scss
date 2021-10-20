@@ -1,0 +1,30 @@
+.button {
+	height: 40px;
+	border-radius: 50px;
+	border: 1px solid #ccc;
+	outline: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.icon-button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background: transparent;
+}
+
+.popup {
+	&__content {
+		position: absolute;
+		background: #fff;
+		padding: 16px;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+	}
+}
+
+.hidden {
+	display: none;
+}

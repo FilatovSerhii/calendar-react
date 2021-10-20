@@ -1,0 +1,33 @@
+.calendar {
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 60px);
+
+	&__time-slot {
+		height: 59px;
+		position: relative;
+		border-bottom: 1px solid #eee;
+	}
+}
+
+.time-line {
+	position: absolute;
+	left: -3px;
+	display: flex;
+	align-items: center;
+	width: calc(100% + 3px);
+	z-index: 1;
+
+	&__circle {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background-color: red;
+	}
+
+	&__line {
+		width: 100%;
+		height: 1px;
+		background-color: red;
+	}
+}

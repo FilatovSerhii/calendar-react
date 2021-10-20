@@ -1,0 +1,90 @@
+.header {
+	display: flex;
+	height: 60px;
+	padding: 0 48px;
+	align-items: center;
+	background-color: rgba(0, 0, 255, 0.658);
+}
+
+.create-event-btn {
+	padding: 0 16px;
+
+	&__icon {
+		margin-right: 8px;
+	}
+}
+
+.navigation {
+	&__today-btn {
+		margin-left: 32px;
+		padding: 0 16px;
+	}
+
+	&__nav-icon {
+		font-size: 16px;
+		margin-left: 20px;
+	}
+
+	&__displayed-month {
+		margin-left: 10px;
+		color: #efefef;
+		font-weight: bold;
+		font-size: 20px;
+	}
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+	color: #efefef;
+}
+
+.day-label {
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px 0 7px;
+
+	&__day-name {
+		font-size: 9px;
+		text-transform: uppercase;
+		opacity: 0.6;
+		padding-bottom: 5px;
+	}
+
+	&__day-number {
+		width: 30px;
+		height: 30px;
+		opacity: 0.6;
+		padding: 5px;
+		font-size: 17px;
+		text-align: center;
+	}
+
+	&__day-gmt {
+		align-self: stretch;
+		border-left: 1px solid rgba(128, 128, 128, 0.5);
+		border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+		height: 0px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	&_current {
+		.day-label__day-name {
+			opacity: 1;
+			color: blue;
+		}
+		.day-label__day-number {
+			opacity: 1;
+			font-weight: bold;
+			border-radius: 50%;
+			background-color: rgb(4, 4, 245);
+			color: white;
+		}
+	}
+}
