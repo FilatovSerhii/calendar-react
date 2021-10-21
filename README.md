@@ -14,5 +14,6 @@ Calendar for time control with the ability to create and delete events.
  - [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer)
  - [HTTP protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
 
+
 ### Author
  - Sergey Filatov

@@ -11,7 +11,7 @@ module.exports = (env, argv) => {
     entry: "./src/index.jsx",
     output: {
       filename: "bundle.js",
-      path: require("path").resolve(__dirname, "review_build"),
+      path: require("path").resolve(__dirname, "build"),
     },
     module: {
       rules: [
