@@ -16,6 +16,8 @@ Calendar for time control with the ability to create and delete events.
 
 ### Author
  - Sergey Filatov
+
+
 <![image](https://user-images.githubusercontent.com/85936492/138239958-882a31e2-3cf8-4db7-b767-af7da8c4052c.png)
 
 >
