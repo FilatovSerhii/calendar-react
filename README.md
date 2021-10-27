@@ -1,6 +1,6 @@
 # Calendar
 
-### [Calendar link](https://https://calendar-react-fs.netlify.app/)
+### [Calendar link](https://calendar-react-fs.netlify.app/)
 
 Calendar for time control with the ability to create and delete events.
 
