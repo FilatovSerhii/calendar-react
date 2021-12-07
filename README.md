@@ -1,6 +1,6 @@
 # Calendar
 
-### [Calendar link](https://vibrant-carson-75dcf5.netlify.app/)
+### [Calendar link](https://calendar-react-fs.netlify.app/)
 
 Calendar for time control with the ability to create and delete events.
 
@@ -8,6 +8,7 @@ Calendar for time control with the ability to create and delete events.
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - [Sass (Scss)](https://sass-lang.com/)
 - [BEM methodology](https://en.bem.info/methodology/)
 - [React](https://reactjs.org/)
