@@ -60,7 +60,10 @@ const App = () => {
         onPrevWeek={onPrevWeek}
         onToday={onToday}
       />
-      <Calendar onDeleteEvent={onDeleteEvent} events={events} weekDates={weekDates} />
+      <Calendar 
+      onDeleteEvent={onDeleteEvent} 
+      events={events} 
+      weekDates={weekDates} />
     </>
   );
 };

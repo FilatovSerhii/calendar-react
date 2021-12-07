@@ -1,7 +1,17 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
+const RedLine = () => {
+  const [redLineTop, setRedLineTop] = useState(new Date().getMinutes());
 
+  const style = {
+    top: redLineTop,
+  };
 
-const TimeLine = ({ style }) => {
+  useEffect(() => {
+    const id = setInterval(() => setRedLineTop(redLineTop + 1), 1000 * 60);
+    return () => clearTimeout(id);
+  });
+
   return (
     <div style={style} className="time-line">
       <div className="time-line__circle"></div>
@@ -10,6 +20,4 @@ const TimeLine = ({ style }) => {
   );
 };
 
-
-
-export default TimeLine;
+export default RedLine;

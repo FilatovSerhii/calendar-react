@@ -1,14 +1,12 @@
 import React from 'react';
 
-
-import Navigation from './../navigation/Navigation';
+import Navigation from "../navigation/Navigation";
 import Week from '../week/Week';
 import Sidebar from '../sidebar/Sidebar';
 
 import './calendar.scss';
 
-const Calendar = ({ onDeleteEvent, weekDates, events }) => {
-  return (
+const Calendar = ({ onDeleteEvent, weekDates, events }) => (
     <section className="calendar">
       <Navigation weekDates={weekDates} />
 
@@ -20,7 +18,6 @@ const Calendar = ({ onDeleteEvent, weekDates, events }) => {
       </div>
     </section>
   );
-};
 
 
 

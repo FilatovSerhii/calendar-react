@@ -12,8 +12,7 @@ export function fetchEvents() {
     });
 }
 
-export const postEvent = eventData => {
-  return fetch(baseUrl, {
+export const postEvent = eventData => fetch(baseUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -22,7 +21,6 @@ export const postEvent = eventData => {
   }).catch(() => {
     alert("Internal Server Error. Can't display events");
   });
-};
 
 export const deleteEvent = taskId => {
   return fetch(`${baseUrl}/${taskId}`, {

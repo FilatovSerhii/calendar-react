@@ -1,7 +1,7 @@
 import React from 'react';
+import moment from 'moment';
 import Hour from '../hour/Hour';
 
-import moment from 'moment';
 
 const Day = ({ onDeleteEvent, dayStart, dataDay, dayEvents, weekDay }) => {
   const hours = Array(24)

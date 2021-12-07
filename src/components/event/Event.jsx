@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 
 import ClassNames from 'classnames';
-
+import DeleteEvent from './DeleteEvent.jsx';
 import './event.scss';
 
-const Event = ({ onDeleteEvent, eventId, height, marginTop, title, time, weekDay }) => {
+const Event = ({
+  onDeleteEvent,
+  eventId,
+  height,
+  marginTop,
+  title,
+  time,
+  weekDay,
+  description,
+}) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const eventStyle = {
@@ -12,39 +21,26 @@ const Event = ({ onDeleteEvent, eventId, height, marginTop, title, time, weekDay
     marginTop,
   };
 
-  const btnStyle = {
-    top: height + marginTop - 10,
-  };
+ 
 
-  const root = document.querySelector('#root');
+  const [isShowModal, setShowModal] = useState(false);
 
-  const showBtnDelete = () => {
-    setIsVisible(true);
-    root.addEventListener('click', hideBtnDelete);
-  };
-
-  const hideBtnDelete = () => {
-    setIsVisible(false);
-    root.removeEventListener('click', hideBtnDelete);
+  const toggleModal = () => {
+    setShowModal(!isShowModal);
   };
 
   return (
     <>
-      <div style={eventStyle} className="event" onClick={showBtnDelete}>
+      <div style={eventStyle} className="event" onClick={toggleModal}>
         <div className="event__title">{title}</div>
         <div className="event__time">{time}</div>
+        <div className="event__description">{description}</div>
+        {isShowModal && (
+          <DeleteEvent onDeleteEvent={onDeleteEvent} eventId={eventId} />
+        )}
       </div>
 
-      <button
-        onClick={() => onDeleteEvent(eventId)}
-        style={btnStyle}
-        className={ClassNames('delete-event-btn', {
-          'delete-event-btn_left': weekDay === 'Sun',
-          hidden: !isVisible,
-        })}
-      >
-        <i className="fas fa-trash"></i>Delete
-      </button>
+      
     </>
   );
 };

@@ -5,8 +5,7 @@ import moment from 'moment';
 
 import { days } from '../../utils/dateUtils.js';
 
-const Navigation = ({ weekDates }) => {
-  return (
+const Navigation = ({ weekDates }) => (
     <header className="calendar__header">
       <span className="calendar__gmt">GMT+02</span>
       {weekDates.map((dayDate, index) => (
@@ -24,7 +23,6 @@ const Navigation = ({ weekDates }) => {
       ))}
     </header>
   );
-};
 
 
 
